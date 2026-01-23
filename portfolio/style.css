@@ -1,0 +1,26 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial;
+    padding: 20px;
+}
+
+h1 {
+    color: hsl(0, 79%, 41%);
+}
+
+h2 {
+    color: #5b0a0a;
+}
+
+p {
+    font-size: 16px;
+}
+
+ul {
+    background-color: rgb(92, 86, 86);
+    padding: 10px;
+}
+
+li {
+    margin: 5px;
+}
