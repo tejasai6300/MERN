@@ -123,3 +123,51 @@ console.log(a+b+c);
  //add(20,30);
 console.log(z);
 var z;
+
+
+//spread operator(...)
+
+var arr1=[10,20,30];
+var arr2=[40,50,60];
+var arr3=[...arr1,...arr2];
+console.log(arr3);  
+
+//destructuring opearator
+var arr=[10,20,30,40,50];
+var [a,b,...c]=arr;
+console.log(a);
+console.log(b);
+console.log(c);
+
+var obj={name:"sai",age:20,city:"hyd",marks:{java:90,js:30}};
+var {name,age,...marks}=obj;
+console.log(name);
+console.log(age);
+console.log(marks);
+//for in loop
+//for (vaeiable variable name in array_name)
+let arr=[10,20,30,40,50];
+for(let i in arr){
+    console.log(i,arr[i]);
+}
+
+var obj={name:"sai",age:20,city:"hyd"};
+for(let i in obj){
+    console.log(i);
+}
+
+//for of loop
+//for(variable variable name of array_name)
+
+let arr1=[10,20,30,40,50];
+var double_arr=arr1.map((value)=>value*2);
+console.log(double_arr);
+
+//filter
+var even = arr1.filter((value)=>value%2===0);
+console.log(even);
+
+var total = arr1.reduce((sum,value)=>sum+value,0);
+console.log(total);
+
+var total_sum=arr1.map((value)=>value*2).filter((value)=>value%2===0).reduce((sum,value)=>sum+value,0);
