@@ -1,0 +1,27 @@
+.filter-btn {
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid #c7d2fe;
+
+  background: white;
+  color: #475569;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  background: #eef2ff;
+  color: #4338ca;
+}
+
+/* Active filter */
+.filter-btn.active {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 6px 16px rgba(79, 70, 229, 0.35);
+}
