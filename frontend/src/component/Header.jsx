@@ -1,11 +1,8 @@
-import React from 'react'
+import React, { useMemo } from "react";
 
-const Header = () => {
-    console.log("Header Rendered");
-    
-  return (
-    <div>Header</div>
-  )
+function Header() {
+  const value = useMemo(() => 10, []);
+  return <h1>{value}</h1>;
 }
 
-export default React.useMemo(Header);
+export default Header;
