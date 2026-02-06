@@ -15,6 +15,7 @@ import Service from './pages/Service'
 import UseMemo from './Hooks/UseMemo'
 import UseReducer from './Hooks/UseReducer'
 import UseCallback from './Hooks/UseCallback'
+import Todo from './component/Todo'
 
 const App = () => {
   return (
@@ -29,6 +30,9 @@ const App = () => {
         <Route path='/counter' element={<Counter/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/signup' element={<Signup/>}/>
+        <Route path='/todo' element={<Todo/>}/>
+
+        {/* Hooks */}
         <Route path='/hook' element={<Hook/>}/>
         <Route path='/useEffectApi' element={<UseEffectApi/>}/>
         <Route path='/useState' element={<UseState/>}/>
@@ -37,6 +41,7 @@ const App = () => {
         <Route path='/useMemo' element={<UseMemo/>}/>
         <Route path='/useReducer' element={<UseReducer/>}/>
         <Route path='/useCallback' element={<UseCallback/>}/>
+        <Route path='/todo' element={<Todo/>}/>
       </Routes>
     </>
   )

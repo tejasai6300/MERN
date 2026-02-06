@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const todoSchema = new mongoose.Schema({
     task:{type:String,required:true},
-    Completed:{type:Boolean,default:false}
+    completed:{type:Boolean,default:false}
 });
 
 module.exports = mongoose.model("Todo", todoSchema);
